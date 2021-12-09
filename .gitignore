@@ -1,0 +1,16 @@
+### Node ###
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# all file inside the directory are not tracked
+junk-buster-on-desktop-win32-x64/
+*.exe 
+
+# electron builder file with secret
+electron-builder.yml

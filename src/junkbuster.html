@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<script src="./phaser.js"></script>
+	<script> src="./updater.js"</script>
+	<script src="./itemsid.js"></script>
+	<script src="./data.js"></script>
+	<script src="./machine/Table.js"></script>
+	<script src="./machine/Soufflerie.js"></script>
+	<script src="./machine/Conveyor.js"></script>
+	<script src="./Creatmap.js"></script>
+	<script src="./machine/Benne.js"></script>
+	<script src="./machine/Incinerateur.js"></script>
+	<script src="./machine/Arrive.js"></script>
+	<script src="./machine/Etabli.js"></script>
+	<script src="./machine/Broyeur.js"></script>
+	<script src="./machine/Oven.js"></script>
+	<script src="./machine/Compresseur.js"></script>
+	<script src="./machine/Presse.js"></script>
+	<script src="./machine/Bassine.js"></script>
+	<script src="./machine/Camion.js"></script>
+	<script src="./machine/Decontamination.js"></script>
+	<script src="./Player.js"></script>
+	<script src="./Tuto.js"></script>
+	<script src="./Game.js"></script>
+	<script src="./Menu.js"></script>
+	<script src="./Timer.js"></script>
+	<script src="./Score.js"></script>
+	<script src="./Polution.js"></script>
+	<script src="./End.js"></script>
+	<script src="./index.js"></script>
+	<style type="text/css">
+	body {
+		background-color: black;
+		width:100vw;
+    	height:100vh;
+    	margin:0px;
+	}
+	body * {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#notification {
+		position: fixed;
+		bottom: 20px;
+		left: 20px;
+		width: 200px;
+		padding: 20px;
+		border-radius: 5px;
+		background-color: white;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	}
+	.hidden {
+		display: none;
+	}
+	</style>
+</head>
+<body>
+	<div id="notification" class="hidden">
+		<p id="message"></p>
+		<button id="close-button" onClick="closeNotification()">
+		  Close
+		</button>
+		<button id="restart-button" onClick="restartApp()" class="hidden">
+		  Restart
+		</button>
+	  </div>
+</body>
+</html>
